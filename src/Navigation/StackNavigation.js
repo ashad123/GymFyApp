@@ -9,6 +9,7 @@ import DashboardPaymentDetailed from '../Admin/DashboardPaymentDetailed'
 import ClientScreen from '../Admin/ClientScreen'
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import DetailScreen from '../Admin/DetailScreen'
 
 
 const Stack = createNativeStackNavigator();
@@ -23,6 +24,7 @@ const MyStack = () => {
       <Stack.Screen name='Dashboard' component={DashboardScreen} />
       <Stack.Screen name='PaymentDetail' component={DashboardPaymentDetailed} />
       <Stack.Screen name='Client' component={ClientScreen} />
+      <Stack.Screen name='ClientDetail' component={DetailScreen} />
   </Stack.Navigator>
   )
 }

@@ -16,7 +16,7 @@ import {
 } from "@expo/vector-icons";
 import TabNavigation from '../Navigation/TabNavigation';
 
-const ClientScreen = () => {
+const ClientScreen = ({navigation}) => {
     const [data, setData] = useState("");
 
    const handleDelete = () => {
@@ -25,7 +25,11 @@ const ClientScreen = () => {
         setTimeout(() => {
             setData("");
         }, 2000);
-    }, );
+    },);
+  }
+
+  const handleClientView = () => {
+     navigation.navigate('ClientDetail')
   }
 
   return (
@@ -80,7 +84,7 @@ const ClientScreen = () => {
           />
           <Text style={styles.phoneContent}>123-456-7890</Text>
           <Feather name="edit" size={17} style={styles.editIcon} />
-          <Feather name="eye" size={17} style={styles.eyeIcon} />
+          <Feather name="eye" size={17} style={styles.eyeIcon} onPress={handleClientView}/>
           <AntDesign name="delete" size={17} style={styles.deleteIcon} onPress={handleDelete} />
         </View>
 
