@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import TabNavigation from '../Navigation/TabNavigation';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { MaterialIcons } from "@expo/vector-icons";
 // import { Button } from 'react-native-paper';
 // import { TouchableOpacity } from 'react-native-gesture-handler';
 
@@ -13,13 +14,24 @@ const DashboardScreen = ({navigation}) => {
 
   return (
     <View>
+    {/* <View>
+    <MaterialIcons
+            name="groups"
+            size={50}
+            color="blue"
+            style={styles.emailIcon}
+          />
+    </View> */}
 <View style={styles.container}>
+
       <View style={styles.column}>
+    
         <View style={styles.card1}>
        {/* <Image
               source={require('./assets/Images/123.png')}
             style={styles.cardImage}
           />  */}
+         
           <Text style={styles.cardText}>CLIENTS</Text>
         </View>
         <View style={styles.card2}>
@@ -41,8 +53,7 @@ const DashboardScreen = ({navigation}) => {
         <Text style={styles.paragraph1}>All View</Text>
         </View>
         <View style={styles.container2}>
-        {/* <View style={styles.content}> */}
-      <Ionicons name='cash-outline' size={35} style={{left: 25, top: 30,}}/>
+       <Ionicons name='cash-outline' size={35} style={{left: 25, top: 30,}}/>
       <Text style={styles.paragraph2}>Due Payment</Text>
       <Text style={styles.paragraph3}>Lorem ipsum dolor sit amet to an 
       consectetur dipiscing sit. elit consectetur dipiscing  tincidunt.</Text>
@@ -144,6 +155,25 @@ const styles = StyleSheet.create({
     // shadowOpacity: 0.2,
     // right: 200,
   },
+  container2: {
+    top: 150,
+    elevation: 3,
+    width: 460,
+    left: 15,
+    marginVertical: 8,
+    paddingBottom: 15,
+    paddingLeft: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    elevation: 3,
+    borderRadius: 0,
+    marginVertical: 8,
+    // paddingTop: 155,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+  },
   paragraph: {
     fontStyle: 'normal',
     fontWeight: '700',
@@ -209,21 +239,14 @@ const styles = StyleSheet.create({
     fontWeight: 400,
     fontSize: 18,
   },
-  container2: {
-    top: 150,
-    elevation: 3,
-    width: 460,
-    left: 15,
-    marginVertical: 8,
-    paddingBottom: 15,
-    paddingLeft: 10,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-  },
+ 
   tabNavigation: {
     top: 320
- }
+ },
+//  emailIcon: {
+// top: 150,
+// Shadowopacity: 0.2,
+//  }
 });
 
 export default DashboardScreen;
