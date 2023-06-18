@@ -14,7 +14,7 @@ const SignUp = ({navigation}) => {
     }
 
     const handelSignIn = () => {
-        navigation.navigate('Dashboard')
+        navigation.navigate('ClientProfile')
     }
 
     const handleSignup = () => {

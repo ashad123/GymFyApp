@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet, Image, TextInput, Button } from "react-native";
+import { View, Text, StyleSheet, Image, TextInput, Button, ScrollView  } from "react-native";
 import React from "react";
 import {FontAwesome, Foundation} from '@expo/vector-icons';
 import TabNavigation from '../Navigation/TabNavigation';
-import { ScrollView } from "react-native-gesture-handler";
 
 
-const DetailScreen = () => {
+
+const DetailScreen = ({navigation}) => {
   return (
     <ScrollView>
     <View style={styles.container}>
@@ -58,7 +58,7 @@ const DetailScreen = () => {
         <View style={[styles.sendBtn, { height: 60 }]}>
           <Button
             title="Send"
-            onPress={() => {}}
+            onPress={() => {navigation.navigate('ClientProfile')}}
           />
         </View>
       </View>
