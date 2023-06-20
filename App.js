@@ -1,10 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import TabNavigation from './src/Navigation/TabNavigation'
 import { loadFonts } from './expo-font';
 import { NavigationContainer } from '@react-navigation/native';
-import StackNavigation from './src/Navigation/StackNavigation'
 import { useEffect } from 'react';
+import MyStack from './src/Navigation/StackNavigation';
+import MyTabs from './src/Navigation/TabNavigation';
 
 
 export default function App() {
@@ -16,12 +14,13 @@ export default function App() {
 
   
   return (
-    <NavigationContainer>
-    <StackNavigation />
-      {/* <TabNavigation />
-    </StackNavigation> */}
+ <NavigationContainer>
+ 
+    <MyTabs />
+    
+    
   </NavigationContainer>
-  );
+ );
 }
 
 

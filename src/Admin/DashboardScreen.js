@@ -62,9 +62,9 @@ const DashboardScreen = ({navigation}) => {
       </TouchableOpacity>
      </View>
    
-    <View style={styles.tabNavigation}>
+    {/* <View style={styles.tabNavigation}>
     <TabNavigation />
-    </View>
+    </View> */}
     </View>
     
  );

@@ -7,66 +7,68 @@ import TabNavigation from '../Navigation/TabNavigation';
 const ClientProfile = () => {
   return (
     // <ScrollView>
-    <View>
-      <View style={styles.container}>
-        <View style={styles.imageContainer}>
-          <View style={styles.circle}>
-            <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} />
-            <Image
-              style={styles.image}
-              source={{
-                uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0jNWYIlNqFu96GVEjFuLxxpGSQQAkaTtwg9lYD2_ypsO8UTVimL-RTJD2cJohV04k9U&usqp=CAU",
-              }}
-            />
+    <View style={{ flex: 1, }} contentContainerStyle={{flexGrow:1, }}>
+    <ScrollView  contentContainerStyle={{flexGrow:1, }}>
+      
+        <View style={styles.container}>
+          <View style={styles.imageContainer}>
+            <View style={styles.circle}>
+              <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} />
+              <Image
+                style={styles.image}
+                source={{
+                  uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0jNWYIlNqFu96GVEjFuLxxpGSQQAkaTtwg9lYD2_ypsO8UTVimL-RTJD2cJohV04k9U&usqp=CAU",
+                }}
+              />
+            </View>
           </View>
-        </View>
-        <Text style={styles.text}>Alex Neo</Text>
-        <Text style={styles.text1}>
-          lorem ipsum dolor sit a amet adipiscing a elit sit Porttitor
-          suspendisse cursus.
-        </Text>
+          <Text style={styles.text}>Alex Neo</Text>
+          <Text style={styles.text1}>
+            lorem ipsum dolor sit a amet adipiscing a elit sit Porttitor
+            suspendisse cursus.
+          </Text>
 
-        <View style={styles.card}>
-          <View style={styles.container2}>
-            <Image
-              source={{
-                uri: "https://au.res.keymedia.com/files/image/andrew%20brooker(1).jpg",
-              }}
-              style={styles.circle1}
-            />
+          <View style={styles.card}>
+            <View style={styles.container2}>
+              <Image
+                source={{
+                  uri: "https://au.res.keymedia.com/files/image/andrew%20brooker(1).jpg",
+                }}
+                style={styles.circle1}
+              />
+            </View>
           </View>
-        </View>
 
-        <View style={styles.card1}>
-          <View style={styles.container2}>
-            <Image
-              source={{
-                uri: "https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/IQ-Accountants-managing-partner-Kyelie-Baxter-Slack-customer-story.jpg",
-              }}
-              style={styles.circle1}
-            />
+          <View style={styles.card1}>
+            <View style={styles.container2}>
+              <Image
+                source={{
+                  uri: "https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/IQ-Accountants-managing-partner-Kyelie-Baxter-Slack-customer-story.jpg",
+                }}
+                style={styles.circle1}
+              />
+            </View>
           </View>
-        </View>
 
-        <View style={styles.card2}>
-          <View style={styles.container2}>
-            <Image
-              source={{
-                uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0jNWYIlNqFu96GVEjFuLxxpGSQQAkaTtwg9lYD2_ypsO8UTVimL-RTJD2cJohV04k9U&usqp=CAU",
-              }}
-              style={styles.circle1}
-            />
+          <View style={styles.card2}>
+            <View style={styles.container2}>
+              <Image
+                source={{
+                  uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0jNWYIlNqFu96GVEjFuLxxpGSQQAkaTtwg9lYD2_ypsO8UTVimL-RTJD2cJohV04k9U&usqp=CAU",
+                }}
+                style={styles.circle1}
+              />
+            </View>
           </View>
-        </View>
 
-        <View style={styles.card3}>
-          <View style={styles.container2}>
-            <Text style={styles.circle2}>+12</Text>
-            {/* 
-          /> */}
+          <View style={styles.card3}>
+            <View style={styles.container2}>
+              <Text style={styles.circle2}>+12</Text>
+              {/* 
+            /> */}
+            </View>
           </View>
         </View>
-      </View>
 
       <View style={styles.statsContainer}>
         <View style={styles.statItem}>
@@ -122,9 +124,33 @@ const ClientProfile = () => {
             </View>
           </View>
         </View>
-      {/* <TabNavigation style={styles.tabNavigation} /> */}
-    </View>
-    // </ScrollView>
+     
+        <View style={styles.card4}>
+          <View style={styles.container2}>
+            <Image
+              source={{
+                uri: "https://images.livemint.com/img/2020/10/08/1140x641/iStock-671091700_1602162868009_1602162936796.jpg",
+              }}
+              style={styles.circle3}
+            />
+            <AntDesign name="clockcircleo" size={18} style={styles.clockIcons}/>
+            <View style={styles.boxContainer}>
+            <Text style={styles.routine}>Morning Workout</Text>
+            <Text style={styles.exercise}>lorem ipsum dolor sit and amet.</Text>
+            
+            <Text style={styles.date}>12/11/2021</Text>
+            </View>
+          </View>
+        </View>
+        
+        <View style={styles.footer}>
+          <TabNavigation />
+        </View>
+
+    </ScrollView>
+      
+     </View> 
+    /* </ScrollView> */
     
   );
 };
@@ -328,6 +354,12 @@ const styles = StyleSheet.create({
    tabNavigation: {
     marginTop: 50,
    },
+   footer: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    width: "100%",
+  },
 });
 
 export default ClientProfile;

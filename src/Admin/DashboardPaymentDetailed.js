@@ -2,8 +2,14 @@ import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'rea
 import React from 'react'
 import TabNavigation from '../Navigation/TabNavigation';
 // import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useScrollToTop } from '@react-navigation/native';
 
  export default DashboardPaymentDetailed = ({navigation}) => {
+
+  // const ref = React.useRef(null);
+
+  // useScrollToTop(ref);
+
   const handleClient = () => {
      navigation.navigate('Client')
   }
