@@ -18,6 +18,9 @@ function MyTabs() {
 
   return (
     <Tab.Navigator
+      tabBarOptions={{
+        tabStyle: {flex: 1, right: 50},
+      }}
       screenOptions={({ route }) => ({
         tabBarVisible: getTabBarVisibility(route),
         tabBarIcon: ({ focused, color, size }) => {
@@ -37,7 +40,7 @@ function MyTabs() {
         },
       })}
     >
-           <Tab.Screen name="Stack" component={MyStack}  options={{headerShown: false}}/>
+           <Tab.Screen name="Stack" component={MyStack}  options={{headerShown: false, tabBarLabel: () => null,}}/>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Profile" component={Profile} />
       <Tab.Screen

@@ -142,10 +142,28 @@ const ClientProfile = () => {
             </View>
           </View>
         </View>
-        
-        <View style={styles.footer}>
-          <TabNavigation />
+
+        <View style={styles.card4}>
+          <View style={styles.container2}>
+            <Image
+              source={{
+                uri: "https://images.livemint.com/img/2020/10/08/1140x641/iStock-671091700_1602162868009_1602162936796.jpg",
+              }}
+              style={styles.circle3}
+            />
+            <AntDesign name="clockcircleo" size={18} style={styles.clockIcons}/>
+            <View style={styles.boxContainer}>
+            <Text style={styles.routine}>Morning Workout</Text>
+            <Text style={styles.exercise}>lorem ipsum dolor sit and amet.</Text>
+            
+            <Text style={styles.date}>12/11/2021</Text>
+            </View>
+          </View>
         </View>
+        
+        {/* <View style={styles.footer}>
+          <TabNavigation />
+        </View> */}
 
     </ScrollView>
       

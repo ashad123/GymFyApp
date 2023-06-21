@@ -3,10 +3,13 @@ import React from "react";
 import Icon from "@expo/vector-icons/FontAwesome";
 import { Feather, SimpleLineIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { ScrollView } from "react-native-gesture-handler";
 const AddGroup = () => {
   const navigation = useNavigation();
 
   return (
+
+    
     <View style={styles.container}>
       <View style={styles.card}>
         <View style={styles.container2}>
@@ -109,6 +112,8 @@ const AddGroup = () => {
         </View>
       </View>
     </View>
+
+    // </ScrollView>
   );
 };
 

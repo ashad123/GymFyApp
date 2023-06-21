@@ -154,9 +154,9 @@ import { useScrollToTop } from '@react-navigation/native';
           <View style={styles.dots} />
         </View>
       </View>
-       <View style={styles.container3}>
+       {/* <View style={styles.container3}>
        <TabNavigation />
-       </View>
+       </View> */}
       
 
  </View>

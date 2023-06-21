@@ -15,6 +15,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import AddGroup from '../Admin/AddGroup'
 import AdminChat from '../Admin/AdminChat'
 import MyTabs from './TabNavigation'
+import AdminGroupsChats from '../Admin/AdminGroupsChats'
 
 
 const Stack = createNativeStackNavigator();
@@ -72,7 +73,8 @@ const MyStack = () => {
           ),
         }}
         />
-        <Stack.Screen name='Chat List' component={AdminChat} />
+        <Stack.Screen name='Chat List' component={AdminChat} options={{headerShown: false}} />
+        <Stack.Screen name='Group Chats' component={AdminGroupsChats} options={{headerShown: false}} />
   </Stack.Navigator>
   )
 }

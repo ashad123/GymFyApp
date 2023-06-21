@@ -64,9 +64,9 @@ const DetailScreen = ({navigation}) => {
       </View>
       
     </View>
-    <View style={{top: 0,}}>
+    {/* <View style={{top: 0,}}>
     <TabNavigation />
-    </View>
+    </View> */}
     </ScrollView>
     
     

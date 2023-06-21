@@ -184,9 +184,41 @@ const ClientScreen = ({navigation}) => {
           <AntDesign name="delete" size={17} style={styles.deleteIcon} />
         </View>
 
+        <View style={styles.container1}>
+          <Image
+            source={{
+              uri: "https://www.mckinsey.com/~/media/mckinsey/our%20people/andre%20de%20oliveira%20vaz%20osorio/andre_profile_1536x1152.jpg?mw=400&car=2:2",
+            }}
+            style={styles.square}
+          />
+
+          <Text style={styles.name}>Alex Neo</Text>
+          <Text style={styles.contentStart}>
+            Package Start Date: 02-11-2021
+          </Text>
+          <Text style={styles.contentEnd}>Package End Date: 30-11-2021</Text>
+          <Fontisto
+            name="email"
+            size={24}
+            color="blue"
+            style={styles.emailIcon}
+          />
+          <Text style={styles.emailContent}>Alex.neo@gmail.com</Text>
+          <MaterialIcons
+            name="phone-in-talk"
+            size={24}
+            color="blue"
+            style={styles.phoneIcon}
+          />
+          <Text style={styles.phoneContent}>123-456-7890</Text>
+          <Feather name="edit" size={17} style={styles.editIcon} />
+          <Feather name="eye" size={17} style={styles.eyeIcon} />
+          <AntDesign name="delete" size={17} style={styles.deleteIcon} />
+        </View>
+
      
       </View>
-      <TabNavigation />
+      {/* <TabNavigation /> */}
     </ScrollView>
   );
 };
