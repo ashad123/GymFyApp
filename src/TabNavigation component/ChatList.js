@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Pressable } from "react-native";
 import React from "react";
 
 
@@ -13,31 +13,35 @@ const ChatList = ({ navigation }) => {
       {/* <ScrollView> */}
       <View style={styles.card}>
         <View style={styles.container2}>
+        <Pressable onPress={() => navigation.navigate('Chat List')}>
           <Image
             source={{
               uri: "https://au.res.keymedia.com/files/image/andrew%20brooker(1).jpg",
             }}
             style={styles.circle1}
           />
+          </Pressable>
           <View style={styles.contentText}>
             <Text style={styles.chatContentName}>Alex Neo</Text>
             <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
           </View>
           <View style={styles.contentTime}>
             <Text>08:30pm</Text>
-            <Text style={styles.circle2}>+12</Text>
+            <Text style={styles.circle2}>+10</Text>
           </View>
         </View>
       </View>
 
       <View style={styles.card}>
         <View style={styles.container2}>
+        <Pressable onPress={() => navigation.navigate('Group Chats')}>
           <Image
             source={{
               uri: "https://s3-alpha-sig.figma.com/img/dfc0/9993/40b953d60acb7f226118bea178e6baa7?Expires=1688342400&Signature=LpnRqmomSU-Kc~leoEMWUWcEGviVf7h9wv1fAw8fB7-HHqJSCvNCNlgxBp699LEgMhaNLnHhD9gFcKv-rESBF1TRJ8txNkDGoVtZ8ni0gRWPvk03ixpoqeoktHnyw~9gH7Ig1Aeo2hlEN127yr9SJjfPc9A5PknotgIIiRMmUWiYi37YAgK2EXsU4UQi6z~VGLMDLchYE21j5IoFVhMiG280p28VI6~MFvpA4X578oxwcQv5ZPz~kcsdnc4Yjltmit8~~GH-V5KwCSm4FWUsxhV8rRpYDUNXWOPVATaVB3ij1A4PUrpkp8G3W95E40RRJOPmkNYTsWt-0e7aPqg4Rw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
             }}
             style={styles.circle1}
           />
+          </Pressable>
           <View style={styles.contentText}>
             <Text style={styles.chatContentName}>Public Group</Text>
             <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
@@ -52,7 +56,7 @@ const ChatList = ({ navigation }) => {
       <View style={styles.card}>
         <View style={styles.container2}>
         <TouchableOpacity onPress={() => {
-          navigation.navigate('Group Chats')
+          
         }}>
           <Image
             source={{
@@ -67,7 +71,7 @@ const ChatList = ({ navigation }) => {
           </View>
           <View style={styles.contentTime}>
             <Text>08:30pm</Text>
-            <Text style={styles.circle2}>+12</Text>
+            <Text style={styles.circle2}>+15</Text>
           </View>
         </View>
       </View>
