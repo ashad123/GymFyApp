@@ -17,6 +17,8 @@ import AdminChat from '../Admin/AdminChat'
 import MyTabs from './TabNavigation'
 import AdminGroupsChats from '../Admin/AdminGroupsChats'
 import AdminMoreOption from '../Admin/AdminMoreOption'
+import AdminMoreWallpapaer from '../Admin/AdminMoreWallpapaer'
+import AdminSendAlert from '../Admin/AdminSendAlert'
 
 
 const Stack = createNativeStackNavigator();
@@ -76,7 +78,9 @@ const MyStack = () => {
         />
         <Stack.Screen name='Chat List' component={AdminChat} options={{headerShown: false}} />
         <Stack.Screen name='Group Chats' component={AdminGroupsChats} options={{headerShown: false}} />
-        <Stack.Screen name='More Option' component={AdminMoreOption}  /> 
+        <Stack.Screen name='More Option' component={AdminMoreOption} options={{headerShown: false}} /> 
+        <Stack.Screen name='Wallpapers' component={AdminMoreWallpapaer} options={{headerShown: false}} /> 
+        <Stack.Screen name='Send Alert' component={AdminSendAlert} options={{headerShown: false}} /> 
   </Stack.Navigator>
   )
 }

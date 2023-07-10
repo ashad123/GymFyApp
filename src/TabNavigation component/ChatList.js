@@ -6,7 +6,7 @@ const ChatList = ({ navigation }) => {
   return (
     // <View>
 
-    <ScrollView>
+    <ScrollView style={styles.container}>
       {/* <View style={styles.container}> */}
 
       <Text style={styles.content}>CONVERSATIONS</Text>
@@ -140,11 +140,11 @@ const ChatList = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    width: 165,
-    height: 27,
-    left: 14,
-    top: 60,
+    // flex: 1,
+    // width: 165,
+    // height: 27,
+    // left: 14,
+    top: 50,
   },
   content: {
     // fontFamily: 'Open Sans',
@@ -153,7 +153,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     lineHeight: 27,
     color: "#8071F7",
-    left: 10,
+    left: 13,
+    top: 15,
   },
   card: {
     left: 10,

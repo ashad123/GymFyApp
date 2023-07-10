@@ -132,7 +132,7 @@ const AdminGroupsChats = ({navigation}) => {
             }}
           >
             <Text style={styles.modalText}>More</Text>
-            <Fontisto name="angle-right" size={13} color="black" style={{left: 185, bottom: 25,}}/>
+            <Fontisto name="angle-right" size={13} color="rgba(145, 145, 145, 0.6)" style={{left: 185, bottom: 25,}}/>
           </TouchableOpacity>
           {/* <View style={styles.horizontalLine} /> */}
 
@@ -487,11 +487,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     marginBottom: 10,
-    color: '#595959',
+    color: "rgba(145, 145, 145, 1)",
      lineHeight: 21.79,
   },
   horizontalLine: {
-    borderBottomColor: "black",
+    borderBottomColor: "rgba(145, 145, 145, 0.6)",
     borderBottomWidth: 1,
     marginBottom: 0,
   },
