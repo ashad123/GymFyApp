@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Pressable } from "react-native";
 import React from "react";
-import { MaterialCommunityIcons, Fontisto } from "@expo/vector-icons";
+import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 
 
 const AdminSendAlert = ({ navigation }) => {
@@ -18,6 +18,13 @@ const AdminSendAlert = ({ navigation }) => {
           <Text style={styles.content}>Back</Text>
         </Pressable>
         <Text style={styles.headerContent}>Users</Text>
+        <MaterialIcons
+          name="search"
+          size={32}
+          color="black"
+          style={styles.searchIcons}
+          onPress={() => navigation.navigate('Group Chats')}
+        />
       </View>
 
       <View style={styles.card}>
@@ -178,6 +185,10 @@ const styles = StyleSheet.create({
       },
       BackIcons: {
         paddingVertical: 7,
+      },
+      searchIcons: {
+        paddingVertical: 5,
+        left: 330,
       },
       content: {
         paddingHorizontal: 10,

@@ -19,6 +19,12 @@ import AdminGroupsChats from '../Admin/AdminGroupsChats'
 import AdminMoreOption from '../Admin/AdminMoreOption'
 import AdminMoreWallpapaer from '../Admin/AdminMoreWallpapaer'
 import AdminSendAlert from '../Admin/AdminSendAlert'
+import AdminAddClient from '../Admin/AdminAddClient'
+import AdminLeadScreen from '../Admin/AdminLeadScreen'
+import AdminAddLeadScreen from '../Admin/AdminAddLeadScreen'
+import AdminLeadDetailScreen from '../Admin/AdminLeadDetailScreen'
+import AdminPostScreen from '../Admin/AdminPostScreen'
+import AdminNotificationScreen from '../Admin/AdminNotificationScreen'
 
 
 const Stack = createNativeStackNavigator();
@@ -81,6 +87,12 @@ const MyStack = () => {
         <Stack.Screen name='More Option' component={AdminMoreOption} options={{headerShown: false}} /> 
         <Stack.Screen name='Wallpapers' component={AdminMoreWallpapaer} options={{headerShown: false}} /> 
         <Stack.Screen name='Send Alert' component={AdminSendAlert} options={{headerShown: false}} /> 
+        <Stack.Screen name='Add Client' component={AdminAddClient} options={{headerShown: false}} />
+        <Stack.Screen name='Admin Leads' component={AdminLeadScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Admin Add Leads' component={AdminAddLeadScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Admin Lead Detail' component={AdminLeadDetailScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Admin Post' component={AdminPostScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Admin Notification' component={AdminNotificationScreen} options={{headerShown: false}} />
   </Stack.Navigator>
   )
 }

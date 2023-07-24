@@ -25,7 +25,7 @@ const ChatList = ({ navigation }) => {
             <Text style={styles.chatContentName}>Alex Neo</Text>
             <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
           </View>
-          <View style={styles.contentTime}>
+          <View style={styles.contentTime2}>
             <Text>08:30pm</Text>
             <Text style={styles.circle2}>+10</Text>
           </View>
@@ -37,7 +37,7 @@ const ChatList = ({ navigation }) => {
         <Pressable onPress={() => navigation.navigate('Group Chats')}>
           <Image
             source={{
-              uri: "https://s3-alpha-sig.figma.com/img/dfc0/9993/40b953d60acb7f226118bea178e6baa7?Expires=1688342400&Signature=LpnRqmomSU-Kc~leoEMWUWcEGviVf7h9wv1fAw8fB7-HHqJSCvNCNlgxBp699LEgMhaNLnHhD9gFcKv-rESBF1TRJ8txNkDGoVtZ8ni0gRWPvk03ixpoqeoktHnyw~9gH7Ig1Aeo2hlEN127yr9SJjfPc9A5PknotgIIiRMmUWiYi37YAgK2EXsU4UQi6z~VGLMDLchYE21j5IoFVhMiG280p28VI6~MFvpA4X578oxwcQv5ZPz~kcsdnc4Yjltmit8~~GH-V5KwCSm4FWUsxhV8rRpYDUNXWOPVATaVB3ij1A4PUrpkp8G3W95E40RRJOPmkNYTsWt-0e7aPqg4Rw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+              uri: "https://m.media-amazon.com/images/I/31dsKMV+ZDL._SX331_BO1,204,203,200_.jpg",
             }}
             style={styles.circle1}
           />
@@ -60,7 +60,7 @@ const ChatList = ({ navigation }) => {
         }}>
           <Image
             source={{
-              uri: "https://s3-alpha-sig.figma.com/img/fbcb/ee5f/f7a127036b03797dd38e1acbfa4aa78a?Expires=1688342400&Signature=N8NtuZpIpJNr4yZdMEfT5JlbV9zziJIFwXwsdWXyWzJlewJdiWh3yfIaE9TjBFzgwglwrogcBxPSJKZkin0FFic5DPCWomYubV4KOPLnGhGCTzaCaAXz-8EX-VtO4d-CxfZ2AAs60z74~NzHRl4PSSC-TPYFrEZc~52Ji~ce1uZR2wFRm3SbglKoWYaUfo6XTK2ib3R55nfBjaQlYb68NEWvZwEb-LuAS83Yz9mHVbYqdnP1mUa3~wh14lW~lLfh4G2nMhZNvAUk8KJ4YMqzJkd0WoR8FPl6Txj2UF6Jt~LPF-4hWfnPo1KsSSwyBVNpc540UBDetx1lmZZj6nsY-Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+              uri: "https://simoncamilleri.com/wp-content/uploads/2022/12/apple.jpg",
             }}
             style={styles.circle1}
           />
@@ -69,7 +69,7 @@ const ChatList = ({ navigation }) => {
             <Text style={styles.chatContentName}>Warrior Group</Text>
             <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
           </View>
-          <View style={styles.contentTime}>
+          <View style={styles.contentTime1}>
             <Text>08:30pm</Text>
             <Text style={styles.circle2}>+15</Text>
           </View>
@@ -80,7 +80,7 @@ const ChatList = ({ navigation }) => {
         <View style={styles.container2}>
           <Image
             source={{
-              uri: "https://s3-alpha-sig.figma.com/img/6f0e/3986/2bb757511ed49a4377255ca5ccb89002?Expires=1688342400&Signature=EKyjONaXRIiwFK7Bo4DBA4Svl9Hfei5e1MIIkiBynu641Sy0gNWNyyxkDYKTeWTFnrQE9jolSCJZMxlmxqGKp5j9wnANlrVcdBzsIPv9s9cChRbIlqh2oDolDKcqUU9jP58MCYTVAJ4SxyEbjiVC31zai6kV2ghpCkVGwp4h8GhgW1UBPdA-VCz-r0MnzFYz~vgxYSWvWn~iCST6BRPHi7Fi4P9fSi73K74r624~HllLoDVuoUCOvroPSXvOMNKJE65cnVnZQm5O4BApH4zIzG2D8Z9pSKf5c-gK40dSC80dL82yLXdY1vUxnKFt7ep6OSbiONqitAnuHgC00Xl3Dw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+              uri: "https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmF3fGVufDB8MHwwfHw%3D&w=1000&q=80",
             }}
             style={styles.circle1}
           />
@@ -99,7 +99,7 @@ const ChatList = ({ navigation }) => {
         <View style={styles.container2}>
           <Image
             source={{
-              uri: "https://s3-alpha-sig.figma.com/img/329a/95e2/1a1c27c00beeba634b00a144b85017d2?Expires=1688342400&Signature=dHsw0nLMaf5qBz~t-Qyrk~E9Qwgqe82HYRUAqlkGGYWE85cYJeFznuQBQ-D4xlT68RB0yOUA-W3co0lRdzT4fFdRsDx8Je2nSJJm56xrvn8VZyr8zaEl0YFYe9x~NOVfJ42n3Ye8dkOYTy7TMY2XItjZuw05cTvYdoQk0cJ3OQ2nm8oGcGhD~wlPCj9hSOUqI4sadCs7Gjg5xgx6qxcRwc0~lSb~cQjKz~2TSP9Pv7V9kQsPPEBbDBjvgR9PNdth2nI2LODrPxvXcbyRuu50KoB-sbWg9gvlmukkvGqtLxjEtWgi4lVCQKoYuTDBfy~S2cbRnr6YdQizKlR5gxJz9g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+              uri: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80",
             }}
             style={styles.circle1}
           />
@@ -107,7 +107,7 @@ const ChatList = ({ navigation }) => {
             <Text style={styles.chatContentName}>Silas Sperow</Text>
             <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
           </View>
-          <View style={styles.contentTime}>
+          <View style={styles.contentTime3}>
             <Text>08:30pm</Text>
             <Text style={styles.circle2}>+12</Text>
           </View>
@@ -126,7 +126,7 @@ const ChatList = ({ navigation }) => {
             <Text style={styles.chatContentName}>Ashton David</Text>
             <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
           </View>
-          <View style={styles.contentTime}>
+          <View style={styles.contentTime4}>
             <Text>08:30pm</Text>
             <Text style={styles.circle2}>+12</Text>
           </View>
@@ -202,7 +202,23 @@ const styles = StyleSheet.create({
     color: "#888888",
   },
   contentTime: {
-    left: 125,
+    left: 115,
+    bottom: 5,
+  },
+  contentTime1: {
+    left: 100,
+    bottom: 5,
+  },
+  contentTime2: {
+    left: 124,
+    bottom: 5,
+  },
+  contentTime3: {
+    left: 106,
+    bottom: 5,
+  },
+  contentTime4: {
+    left: 95,
     bottom: 5,
   },
   circle2: {

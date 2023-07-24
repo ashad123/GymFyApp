@@ -1,8 +1,10 @@
 import { loadFonts } from './expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect } from 'react';
-import MyStack from './src/Navigation/StackNavigation';
+// import MyStack from './src/Navigation/StackNavigation';
 import MyTabs from './src/Navigation/TabNavigation';
+import 'react-native-gesture-handler';
+// import Animated from 'react-native-reanimated';
 
 
 export default function App() {
@@ -15,11 +17,10 @@ export default function App() {
   
   return (
  <NavigationContainer>
- 
-    <MyTabs />
-    
-    
+     <MyTabs />
+    {/* {Animated.initializeReanimated()} */}
   </NavigationContainer>
+  
  );
 }
 

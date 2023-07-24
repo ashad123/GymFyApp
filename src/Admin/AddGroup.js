@@ -8,23 +8,23 @@ const AddGroup = () => {
   const navigation = useNavigation();
 
   return (
-
-    
     <View style={styles.container}>
       <View style={styles.card}>
-        <View style={styles.container2}>
-          <Icon
-            name="user-plus"
-            size={40}
-            color={"#fff"}
-            style={styles.icons}
-            onPress={() => {}}
-          />
+        <TouchableOpacity onPress={() => navigation.navigate("Add Client")}>
+          <View style={styles.container2}>
+            <Icon
+              name="user-plus"
+              size={40}
+              color={"#fff"}
+              style={styles.icons}
+              onPress={() => {}}
+            />
           <View style={styles.contentText}>
-            <Text style={styles.chatContentName}>Add User</Text>
-            <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
+              <Text style={styles.chatContentName}>Add User</Text>
+              <Text style={styles.lowerContent}>lorem ipsum dolor sit</Text>
+            </View>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
       <View style={styles.card}>
         <View style={styles.container2}>
