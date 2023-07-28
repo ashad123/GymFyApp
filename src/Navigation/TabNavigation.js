@@ -42,7 +42,7 @@ function MyTabs() {
     >
            <Tab.Screen name="Stack" component={MyStack}  options={{headerShown: false, tabBarLabel: () => null,}}/>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Profile" component={Profile}  options={{headerShown: false}}/>
       <Tab.Screen
         name="Chat"
         component={ChatList}

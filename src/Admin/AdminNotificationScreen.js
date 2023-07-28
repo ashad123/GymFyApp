@@ -314,7 +314,7 @@ const AdminNotificationScreen = ({ navigation }) => {
                   name="bell-slash"
                   size={30}
                 />
-                <Text style={styles.offNotificationContent}>
+                <Text style={styles.offNotificationContent} onPress={() => navigation.navigate('Admin Notification Detailed')}>
                 Turn off Notification 
                 </Text>
               </View>

@@ -1,53 +1,57 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
-import { FontAwesome, EvilIcons } from "@expo/vector-icons";
+import { FontAwesome, EvilIcons, AntDesign } from "@expo/vector-icons";
 import { TextInput } from "react-native-paper";
 
-const Profile = ({ navigation }) => {
+const UserAcceptInviteScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.headerContent}>GymiFy</Text>
-      <Text style={styles.headerContent1}>Invite a Client</Text>
+      <Text style={styles.headerContent1}>You’re In!</Text>
       <Text style={styles.headerContent3}>
-        lorem ipsum dolor sit a amet adipiscing a elit sit Porttitor suspendisse
-        cursus.
+      Don’t lose your Invite...
       </Text>
 
 
 <View style={styles.IconsContainer}>
 <View style={styles.shadowContainer}>
   <Text style={styles.mobileContent}>By Phone</Text>
-  <FontAwesome
-  name="mobile-phone"
-   size={70}
+  <AntDesign
+  name="apple-o"
+   size={60}
    color={'#F35585'}
    style={styles.mobileIcon}
   />
   <View style={styles.horizontalLine} />
   <View style={styles.emailContainer}>
   <Text style={styles.envelopContent}>By Email</Text>
-  <EvilIcons
-  name="envelope"
-   size={70}
+  <AntDesign
+  name="android"
+   size={60}
    style={styles.envelopIcon}
   />
   </View>
 </View>
 </View>
 
-<View style={styles.inputWrapper}>
+{/* <View style={styles.inputWrapper}>
 <TextInput 
   placeholder="+91-1234-567-890"
   style={styles.input}
 />
-</View>
+</View> */}
 <View style={styles.footerContainer}>
-  <Text style={styles.footerContent}>lorem ipsum dolor sit a amet adipiscing a elit
-Porttitor suspendisse cursuslorem ipsum dolor amet and adipiscing.</Text>
+  <Text style={styles.footerContent}>Free for IOS & Android.</Text>
 </View>
  <View style={styles.container4}>
+        <TouchableOpacity style={[styles.btn, {backgroundColor: '#FF94B2'}]} onPress={() => navigation.navigate('Accept Invite')}>
+          <Text style={styles.btnText}>Cancel</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.container4}>
         <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Accept Invite')}>
-          <Text style={styles.btnText}>Invite Client</Text>
+          <Text style={styles.btnText}>Save</Text>
         </TouchableOpacity>
       </View>
 
@@ -83,7 +87,7 @@ const styles = StyleSheet.create({
   },
   headerContent1: {
     top: 170,
-    left: 170,
+    left: 190,
     letterSpacing: 1,
     fontSize: 26,
     fontWeight: "600",
@@ -91,14 +95,15 @@ const styles = StyleSheet.create({
   },
   headerContent3: {
     fontFamily: 'Open Sans',
-fontSize: 16,
-fontWeight: '400',
+fontSize: 20,
+fontWeight: '800',
 lineHeight: 23,
 letterSpacing: 1,
 textAlign: 'center',
 top: 160,
 flex: 1,
 padding: 20,
+left: 10,
   },
   shadowContainer: {
     shadowColor: "#000",
@@ -119,7 +124,7 @@ padding: 20,
     
   },
   mobileIcon: {
-    right: -20,
+    right: -10,
     top: 45,
   },
   horizontalLine: {
@@ -136,7 +141,7 @@ padding: 20,
   },
   envelopIcon: {
     left: 0,
-    top: 10,
+    top: 2,
   },
   mobileContent: {
     color: '#F35585',
@@ -164,15 +169,16 @@ padding: 20,
     color: 'red', 
    },
    footerContainer: {
-     bottom: 150,
+     bottom: 320,
      padding: 20,
     },
    footerContent: {
     fontFamily: 'Open Sans',
     textAlign: 'center',
-     fontSize: 16,
-     fontWeight: '400',
+    fontSize: 20,
+    fontWeight: '800',
      letterSpacing: 1,
+     left: 10,
    },
     container4: {
     // height: 250,
@@ -180,6 +186,7 @@ padding: 20,
     left: 27,
     bottom: 140,
     borderRadius: null,
+    margin: 5,
   },
   btn: {
     height: 56, // Increase the height here
@@ -199,4 +206,4 @@ padding: 20,
   },
 });
 
-export default Profile;
+export default UserAcceptInviteScreen

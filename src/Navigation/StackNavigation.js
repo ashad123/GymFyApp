@@ -25,6 +25,16 @@ import AdminAddLeadScreen from '../Admin/AdminAddLeadScreen'
 import AdminLeadDetailScreen from '../Admin/AdminLeadDetailScreen'
 import AdminPostScreen from '../Admin/AdminPostScreen'
 import AdminNotificationScreen from '../Admin/AdminNotificationScreen'
+import AdmiNotificationDetailedScreen from '../Admin/AdmiNotificationDetailedScreen'
+import AdminGroupListScreen from '../Admin/AdminGroupListScreen'
+import AdminAddNewGroup from '../Admin/AdminAddNewGroup'
+import AdminAddYourGroupChatScreen from '../Admin/AdminAddYourGroupChatScreen'
+import AdminAddUserourGroupChatScreen from '../Admin/AdminAddUserourGroupChatScreen'
+import AdminUserListScreen from '../Admin/AdminUserListScreen'
+import AdminInviteUsersScreen from '../Admin/AdminInviteUsersScreen'
+import UserInviteScreen from '../User/UserInviteScreen'
+import Profile from '../TabNavigation component/Profile'
+import UserAcceptInviteScreen from '../User/UserAcceptInviteScreen'
 
 
 const Stack = createNativeStackNavigator();
@@ -93,6 +103,19 @@ const MyStack = () => {
         <Stack.Screen name='Admin Lead Detail' component={AdminLeadDetailScreen} options={{headerShown: false}} />
         <Stack.Screen name='Admin Post' component={AdminPostScreen} options={{headerShown: false}} />
         <Stack.Screen name='Admin Notification' component={AdminNotificationScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Admin Notification Detailed' component={AdmiNotificationDetailedScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Group List' component={AdminGroupListScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Add New Group' component={AdminAddNewGroup} options={{headerShown: false}} />
+        <Stack.Screen name='Add Your Group Chat' component={AdminAddYourGroupChatScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Add User Your Group Chat' component={AdminAddUserourGroupChatScreen} options={{headerShown: false}} />
+        <Stack.Screen name='User List Screen' component={AdminUserListScreen} options={{headerShown: false}} />
+        <Stack.Screen name='Invite Users Screen' component={AdminInviteUsersScreen} options={{headerShown: false}} />
+  
+  {/* user Screen */}
+ 
+ <Stack.Screen name='Accept Invite' component={UserAcceptInviteScreen} options={{headerShown: false}} />
+
+
   </Stack.Navigator>
   )
 }
