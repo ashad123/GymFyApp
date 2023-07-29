@@ -35,6 +35,12 @@ import AdminInviteUsersScreen from '../Admin/AdminInviteUsersScreen'
 import UserInviteScreen from '../User/UserInviteScreen'
 import Profile from '../TabNavigation component/Profile'
 import UserAcceptInviteScreen from '../User/UserAcceptInviteScreen'
+import UserSignInScreen from '../User/UserSignInScreen'
+import UserEmailSignInScreen from '../User/UserEmailSignInScreen'
+import UserOTPScreen from '../User/UserOTPScreen'
+import UserDashboardScreen from '../User/UserDashboardScreen'
+import UserYourGroupsScreen from '../User/UserYourGroupsScreen'
+import UserPackagePlanScreen from '../User/UserPackagePlanScreen'
 
 
 const Stack = createNativeStackNavigator();
@@ -45,7 +51,7 @@ const MyStack = () => {
   return (
     <Stack.Navigator>
     
-     <Stack.Screen name='EmailSignIn' component={EmailSignInScreen} />
+     <Stack.Screen name='EmailSignIn' component={EmailSignInScreen} options={{headerShown: false}} />
        <Stack.Screen name='PhoneSignIn' component={PhoneSignIn} />
       <Stack.Screen name='OtpScreen' component={OtpScreen} />
       <Stack.Screen name='SignUp' component={SignUp} />
@@ -114,8 +120,12 @@ const MyStack = () => {
   {/* user Screen */}
  
  <Stack.Screen name='Accept Invite' component={UserAcceptInviteScreen} options={{headerShown: false}} />
-
-
+  <Stack.Screen name='User SignIn' component={UserSignInScreen} options={{headerShown: false}} />
+ <Stack.Screen name='Email SignIn' component={UserEmailSignInScreen} options={{headerShown: false}} />
+ <Stack.Screen name='Otp Screen' component={UserOTPScreen} options={{headerShown: false}} />
+ <Stack.Screen name='User Dashboard' component={UserDashboardScreen} options={{headerShown: false}} />
+ <Stack.Screen name='User Your Groups' component={UserYourGroupsScreen} options={{headerShown: false}} />
+ <Stack.Screen name='User Package Plan' component={UserPackagePlanScreen} options={{headerShown: false}} />
   </Stack.Navigator>
   )
 }

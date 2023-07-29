@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesome, EvilIcons, AntDesign } from "@expo/vector-icons";
 import { TextInput } from "react-native-paper";
 
-const UserAcceptInviteScreen = () => {
+const UserAcceptInviteScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.headerContent}>GymiFy</Text>
@@ -50,7 +50,7 @@ const UserAcceptInviteScreen = () => {
       </View>
 
       <View style={styles.container4}>
-        <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Accept Invite')}>
+        <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('User SignIn')}>
           <Text style={styles.btnText}>Save</Text>
         </TouchableOpacity>
       </View>
