@@ -1,19 +1,22 @@
-import { View, Text, StyleSheet, Image, ScrollView,  } from "react-native";
+import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 import React from "react";
 import { MaterialCommunityIcons, AntDesign } from "@expo/vector-icons";
-import TabNavigation from '../Navigation/TabNavigation';
+import TabNavigation from "../Navigation/TabNavigation";
 // import { ScrollView } from "react-native-gesture-handler";
 
 const ClientProfile = () => {
   return (
     // <ScrollView>
-    <View style={{ flex: 1, }} contentContainerStyle={{flexGrow:1, }}>
-    <ScrollView  contentContainerStyle={{flexGrow:1, }}>
-      
+    <View style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <View style={styles.container}>
           <View style={styles.imageContainer}>
             <View style={styles.circle}>
-              <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} />
+              <MaterialCommunityIcons
+                name="circle-edit-outline"
+                size={25}
+                style={styles.penIcons}
+              />
               <Image
                 style={styles.image}
                 source={{
@@ -70,26 +73,26 @@ const ClientProfile = () => {
           </View>
         </View>
 
-      <View style={styles.statsContainer}>
-        <View style={styles.statItem}>
-          <Text style={styles.statValue}>24%</Text>
-          <Text style={styles.statText}>Body Fat</Text>
+        <View style={styles.statsContainer}>
+          <View style={styles.statItem}>
+            <Text style={styles.statValue}>24%</Text>
+            <Text style={styles.statText}>Body Fat</Text>
+          </View>
+          <View style={styles.verticalLine} />
+          <View style={styles.statItem}>
+            <Text style={styles.statValue}>74kg</Text>
+            <Text style={styles.statText}>Weight</Text>
+          </View>
+          <View style={styles.verticalLine} />
+          <View style={styles.statItem}>
+            <Text style={styles.statValue}>185cm</Text>
+            <Text style={styles.statText}>Height</Text>
+          </View>
         </View>
-        <View style={styles.verticalLine} />
-        <View style={styles.statItem}>
-          <Text style={styles.statValue}>74kg</Text>
-          <Text style={styles.statText}>Weight</Text>
+        <View>
+          <Text style={styles.content}>Activities</Text>
         </View>
-        <View style={styles.verticalLine} />
-        <View style={styles.statItem}>
-          <Text style={styles.statValue}>185cm</Text>
-          <Text style={styles.statText}>Height</Text>
-        </View>
-      </View>
-      <View>
-      <Text style={styles.content}>Activities</Text>
-</View>
-      <View style={styles.card4}>
+        <View style={styles.card4}>
           <View style={styles.container2}>
             <Image
               source={{
@@ -97,12 +100,18 @@ const ClientProfile = () => {
               }}
               style={styles.circle3}
             />
-            <AntDesign name="clockcircleo" size={18} style={styles.clockIcons}/>
+            <AntDesign
+              name="clockcircleo"
+              size={18}
+              style={styles.clockIcons}
+            />
             <View style={styles.boxContainer}>
-            <Text style={styles.routine}>Morning Workout</Text>
-            <Text style={styles.exercise}>lorem ipsum dolor sit and amet.</Text>
-            
-            <Text style={styles.date}>12/11/2021</Text>
+              <Text style={styles.routine}>Morning Workout</Text>
+              <Text style={styles.exercise}>
+                lorem ipsum dolor sit and amet.
+              </Text>
+
+              <Text style={styles.date}>12/11/2021</Text>
             </View>
           </View>
         </View>
@@ -115,30 +124,18 @@ const ClientProfile = () => {
               }}
               style={styles.circle3}
             />
-            <AntDesign name="clockcircleo" size={18} style={styles.clockIcons}/>
-            <View style={styles.boxContainer}>
-            <Text style={styles.routine}>Morning Workout</Text>
-            <Text style={styles.exercise}>lorem ipsum dolor sit and amet.</Text>
-            
-            <Text style={styles.date}>12/11/2021</Text>
-            </View>
-          </View>
-        </View>
-     
-        <View style={styles.card4}>
-          <View style={styles.container2}>
-            <Image
-              source={{
-                uri: "https://images.livemint.com/img/2020/10/08/1140x641/iStock-671091700_1602162868009_1602162936796.jpg",
-              }}
-              style={styles.circle3}
+            <AntDesign
+              name="clockcircleo"
+              size={18}
+              style={styles.clockIcons}
             />
-            <AntDesign name="clockcircleo" size={18} style={styles.clockIcons}/>
             <View style={styles.boxContainer}>
-            <Text style={styles.routine}>Morning Workout</Text>
-            <Text style={styles.exercise}>lorem ipsum dolor sit and amet.</Text>
-            
-            <Text style={styles.date}>12/11/2021</Text>
+              <Text style={styles.routine}>Morning Workout</Text>
+              <Text style={styles.exercise}>
+                lorem ipsum dolor sit and amet.
+              </Text>
+
+              <Text style={styles.date}>12/11/2021</Text>
             </View>
           </View>
         </View>
@@ -151,25 +148,52 @@ const ClientProfile = () => {
               }}
               style={styles.circle3}
             />
-            <AntDesign name="clockcircleo" size={18} style={styles.clockIcons}/>
+            <AntDesign
+              name="clockcircleo"
+              size={18}
+              style={styles.clockIcons}
+            />
             <View style={styles.boxContainer}>
-            <Text style={styles.routine}>Morning Workout</Text>
-            <Text style={styles.exercise}>lorem ipsum dolor sit and amet.</Text>
-            
-            <Text style={styles.date}>12/11/2021</Text>
+              <Text style={styles.routine}>Morning Workout</Text>
+              <Text style={styles.exercise}>
+                lorem ipsum dolor sit and amet.
+              </Text>
+
+              <Text style={styles.date}>12/11/2021</Text>
             </View>
           </View>
         </View>
-        
+
+        <View style={styles.card4}>
+          <View style={styles.container2}>
+            <Image
+              source={{
+                uri: "https://images.livemint.com/img/2020/10/08/1140x641/iStock-671091700_1602162868009_1602162936796.jpg",
+              }}
+              style={styles.circle3}
+            />
+            <AntDesign
+              name="clockcircleo"
+              size={18}
+              style={styles.clockIcons}
+            />
+            <View style={styles.boxContainer}>
+              <Text style={styles.routine}>Morning Workout</Text>
+              <Text style={styles.exercise}>
+                lorem ipsum dolor sit and amet.
+              </Text>
+
+              <Text style={styles.date}>12/11/2021</Text>
+            </View>
+          </View>
+        </View>
+
         {/* <View style={styles.footer}>
           <TabNavigation />
         </View> */}
-
-    </ScrollView>
-      
-     </View> 
+      </ScrollView>
+    </View>
     /* </ScrollView> */
-    
   );
 };
 
@@ -245,16 +269,15 @@ const styles = StyleSheet.create({
   container2: {
     flexDirection: "row",
     alignItems: "center",
-   
   },
- penIcons: {
-  left: 90,
-  top: 10,
-  backgroundColor: '#fff',
-  borderRadius: 25,
-  position: "absolute",
+  penIcons: {
+    left: 90,
+    top: 10,
+    backgroundColor: "#fff",
+    borderRadius: 25,
+    position: "absolute",
     zIndex: 1,
- },
+  },
   circle1: {
     width: 50,
     height: 50,
@@ -334,9 +357,8 @@ const styles = StyleSheet.create({
   boxContainer: {
     bottom: 30,
     left: 70,
-  
   },
-   routine: {
+  routine: {
     // top: 100,
     // left: 50,
     // top: 20,
@@ -346,33 +368,33 @@ const styles = StyleSheet.create({
     fontWeight: 800,
     color: "#000000",
     marginRight: 20,
-   },
-   exercise: {
+  },
+  exercise: {
     fontFamily: "Open Sans",
     fontStyle: "normal",
     lineHeight: 25,
     fontSize: 14,
     fontWeight: 400,
-    color: '#737373',
-   },
-   date: {
+    color: "#737373",
+  },
+  date: {
     fontFamily: "Open Sans",
     fontStyle: "normal",
     lineHeight: 22,
     fontSize: 12,
     fontWeight: 400,
-    color: '#737373',
+    color: "#737373",
     left: 30,
-    top: 3
-   },
-   clockIcons: {
+    top: 3,
+  },
+  clockIcons: {
     top: 0,
     left: 90,
-   },
-   tabNavigation: {
+  },
+  tabNavigation: {
     marginTop: 50,
-   },
-   footer: {
+  },
+  footer: {
     position: "absolute",
     bottom: 0,
     left: 0,

@@ -66,82 +66,81 @@ const UserPackagePlanScreen = ({ navigation }) => {
               Your Subscription Valid Till: 01 Dec 2021
             </Text>
           </View>
+          <TouchableOpacity onPress={()=> (navigation.navigate('User Profile'))}>
           <View style={styles.upgradebnt}>
-            {/* <TouchableOpacity> */}
             <Text style={styles.btn}>Upgrade Plan</Text>
-            {/* </TouchableOpacity> */}
           </View>
+          </TouchableOpacity>
         </View>
       </View>
 
       <Text style={styles.otherBtn}>Other Package</Text>
 
       <View style={styles.imageContainer}>
-      <View style={styles.priceContainer}>
-        <View style={styles.circle}>
-          {/* <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} /> */}
-          <Image
-            style={styles.image1}
-            source={{
-              uri: "",
-            }}
-          />
-          <View style={styles.price}>
-          <Text style={styles.priceContent}>$ </Text>
-         <Text style={styles.priceContent}>80</Text>
-         </View>
-        </View>
-        <View style={styles.priceName}>
+        <View style={styles.priceContainer}>
+          <View style={styles.circle}>
+            {/* <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} /> */}
+            <Image
+              style={styles.image1}
+              source={{
+                uri: "",
+              }}
+            />
+            <View style={styles.price}>
+              <Text style={styles.priceContent}>$ </Text>
+              <Text style={styles.priceContent}>80</Text>
+            </View>
+          </View>
+          <View style={styles.priceName}>
             <Text style={styles.priceContent1}>Popular Package</Text>
             <Text style={styles.priceContent2}>Per Month</Text>
-        </View>
+          </View>
         </View>
       </View>
 
       <View style={styles.imageContainer1}>
-      <View style={[styles.priceContainer, {}]}>
-        <View style={styles.circle}>
-          {/* <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} /> */}
-          <Image
-            style={[styles.image1, {backgroundColor: '#A99EFE'}]}
-            source={{
-              uri: "",
-            }}
-          />
-          <View style={styles.price}>
-          <Text style={styles.priceContent}>$ </Text>
-         <Text style={styles.priceContent}>50</Text>
-         </View>
-        </View>
-        <View style={styles.priceName}>
+        <View style={[styles.priceContainer, {}]}>
+          <View style={styles.circle}>
+            {/* <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} /> */}
+            <Image
+              style={[styles.image1, { backgroundColor: "#A99EFE" }]}
+              source={{
+                uri: "",
+              }}
+            />
+            <View style={styles.price}>
+              <Text style={styles.priceContent}>$ </Text>
+              <Text style={styles.priceContent}>50</Text>
+            </View>
+          </View>
+          <View style={styles.priceName}>
             <Text style={styles.priceContent1}>Standard Package</Text>
             <Text style={styles.priceContent2}>Per Month</Text>
-        </View>
+          </View>
         </View>
       </View>
 
       <View style={styles.imageContainer2}>
-      <View style={styles.priceContainer}>
-        <View style={styles.circle}>
-          {/* <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} /> */}
-          <Image
-            style={[styles.image1, {backgroundColor: '#A99EFE'}]}
-            source={{
-              uri: "",
-            }}
-          />
-          <View style={styles.price}>
-          <Text style={styles.priceContent}>$ </Text>
-         <Text style={styles.priceContent}>40</Text>
-         </View>
-        </View>
-        <View style={styles.priceName}>
+        <View style={styles.priceContainer}>
+          <View style={styles.circle}>
+            {/* <MaterialCommunityIcons name="circle-edit-outline" size={25}  style={styles.penIcons} /> */}
+            <Image
+              style={[styles.image1, { backgroundColor: "#A99EFE" }]}
+              source={{
+                uri: "",
+              }}
+            />
+            <View style={styles.price}>
+              <Text style={styles.priceContent}>$ </Text>
+              <Text style={styles.priceContent}>40</Text>
+            </View>
+          </View>
+          <View style={styles.priceName}>
             <Text style={styles.priceContent1}>Golden Package</Text>
             <Text style={styles.priceContent2}>Per Month</Text>
-        </View>
+          </View>
         </View>
       </View>
-
     </ScrollView>
   );
 };
@@ -153,7 +152,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     paddingHorizontal: 10,
     paddingVertical: 60,
-    
+
     // flex: 1
   },
   BackIcons: {
@@ -248,11 +247,11 @@ const styles = StyleSheet.create({
     bottom: 45,
   },
   priceContent: {
-    color: '#FFF',
-    textAlign: 'center',
-    fontfamily: 'Open Sans',
+    color: "#FFF",
+    textAlign: "center",
+    fontfamily: "Open Sans",
     fontSize: 28,
-    fontWeight: '700',
+    fontWeight: "700",
     lineHeight: 26,
     padding: 3,
   },
@@ -261,17 +260,17 @@ const styles = StyleSheet.create({
     left: 100,
   },
   priceContent1: {
-    color: '#000',
-    fontfamily: 'Open Sans',
+    color: "#000",
+    fontfamily: "Open Sans",
     fontSize: 20,
-    fontWeight: '600',
+    fontWeight: "600",
     lineHeight: 26,
   },
   priceContent2: {
-    color: '#7C7C7C',
-    fontfamily: 'Open Sans',
+    color: "#7C7C7C",
+    fontfamily: "Open Sans",
     fontSize: 14,
-    fontWeight: '400',
+    fontWeight: "400",
     lineHeight: 26,
   },
   imageContent: {

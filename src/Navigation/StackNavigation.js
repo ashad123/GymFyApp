@@ -41,6 +41,10 @@ import UserOTPScreen from '../User/UserOTPScreen'
 import UserDashboardScreen from '../User/UserDashboardScreen'
 import UserYourGroupsScreen from '../User/UserYourGroupsScreen'
 import UserPackagePlanScreen from '../User/UserPackagePlanScreen'
+import UserProfileScreen from '../User/UserProfileScreen'
+import UserNotificationScreen from '../User/UserNotificationScreen'
+import UserChatlisting from '../User/UserChatlisting'
+import UserChatScreen from '../User/UserChatScreen'
 
 
 const Stack = createNativeStackNavigator();
@@ -126,6 +130,11 @@ const MyStack = () => {
  <Stack.Screen name='User Dashboard' component={UserDashboardScreen} options={{headerShown: false}} />
  <Stack.Screen name='User Your Groups' component={UserYourGroupsScreen} options={{headerShown: false}} />
  <Stack.Screen name='User Package Plan' component={UserPackagePlanScreen} options={{headerShown: false}} />
+ <Stack.Screen name='User Profile' component={UserProfileScreen} options={{headerShown: false}} />
+<Stack.Screen name='User Notification' component={UserNotificationScreen} options={{headerShown: false}} />
+<Stack.Screen name='User Chat listing' component={UserChatlisting} options={{headerShown: false}} />
+<Stack.Screen name='User Chat Screen' component={UserChatScreen} options={{headerShown: false}} />
+
   </Stack.Navigator>
   )
 }
