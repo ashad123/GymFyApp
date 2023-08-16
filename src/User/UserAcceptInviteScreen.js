@@ -1,14 +1,16 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Pressable } from "react-native";
 import React from "react";
 import { FontAwesome, EvilIcons, AntDesign } from "@expo/vector-icons";
-import { TextInput } from "react-native-paper";
+import { useNavigation } from "@react-navigation/native";
+// import { TextInput } from "react-native-paper";
 
-const UserAcceptInviteScreen = ({navigation}) => {
+const UserAcceptInviteScreen = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.headerContent}>GymiFy</Text>
       <Text style={styles.headerContent1}>You’re In!</Text>
-      <Text style={styles.headerContent3}>
+      <Text style={styles.headerContent3} onPress={()=> navigation.navigate('User Sign-In')}>
       Don’t lose your Invite...
       </Text>
 
@@ -44,13 +46,13 @@ const UserAcceptInviteScreen = ({navigation}) => {
   <Text style={styles.footerContent}>Free for IOS & Android.</Text>
 </View>
  <View style={styles.container4}>
-        <TouchableOpacity style={[styles.btn, {backgroundColor: '#FF94B2'}]} onPress={() => navigation.navigate('Accept Invite')}>
+        <TouchableOpacity style={[styles.btn, {backgroundColor: '#FF94B2'}]} >
           <Text style={styles.btnText}>Cancel</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.container4}>
-        <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('User SignIn')}>
+        <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('User Sign-In') }>
           <Text style={styles.btnText}>Save</Text>
         </TouchableOpacity>
       </View>

@@ -7,12 +7,13 @@ import Notification from '../TabNavigation component/Notification';
 import ChatList from '../TabNavigation component/ChatList';
 import { useNavigation } from '@react-navigation/native';
 import MyStack from './StackNavigation';
+import UserChatScreen from '../User/UserChatScreen';
 
 
 
 const Tab = createBottomTabNavigator();
 
-function MyTabs() {
+function TabNavigation() {
 
   const navigation = useNavigation();
 
@@ -41,7 +42,7 @@ function MyTabs() {
       })}
     >
            <Tab.Screen name="Stack" component={MyStack}  options={{headerShown: false, tabBarLabel: () => null,}}/>
-      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Home" component={Home}  options={{ headerShown: false}}/>
       <Tab.Screen name="Profile" component={Profile}  options={{headerShown: false}}/>
       <Tab.Screen
         name="Chat"
@@ -51,10 +52,12 @@ function MyTabs() {
             e.preventDefault();
             navigation.navigate('Chat');
           },
+          
         }}
         
       />
       <Tab.Screen name='Notification' component={Notification} />
+      {/* <Tab.Screen name='User Chat Screen' component={UserChatScreen}  options={{ tabBarVisible: false }} /> */}
     </Tab.Navigator>
   );
 }
@@ -69,4 +72,4 @@ function getTabBarVisibility(route) {
   return true; // Show tab bar for all other screens
 }
 
-export default MyTabs;
+export default TabNavigation;

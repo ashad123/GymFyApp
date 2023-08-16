@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     top: 119,
   },
   textMain: {
-    fontFamily: 'OpenSans-Light',
+    // fontFamily: 'OpenSans-Light',
     left: 12,
     fontSize: 22,
     fontWeight: 600,
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     height: 22,
     left: 15,
     top: 40,
-    fontFamily:'OpenSans-Light',
+    // fontFamily:'OpenSans-Light',
     fontStyle: "normal",
     fontWeight: 400,
     fontSize: 16,
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     color: "black",
   },
   btn2: {
-    fontFamily: 'OpenSans-Light',
+    // fontFamily: 'OpenSans-Light',
     fontSize: 16,
     fontWeight: "400",
     top: 15,
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     top: 150,
   },
   text3: {
-    fontFamily:'OpenSans-Light',
+    // fontFamily:'OpenSans-Light',
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: 16,
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
   },
   btnText: {
-    fontFamily: 'OpenSans-Light',
+    // fontFamily: 'OpenSans-Light',
     fontStyle: "normal",
     fontWeight: "600",
     fontSize: 18,
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     borderRadius: null,
   },
   footer: {
-    fontFamily: 'OpenSans-Light',
+    // fontFamily: 'OpenSans-Light',
     fontSize: 16,
     fontWeight: "600",
     lineHeight: 22,
@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
   },
   footer1: {
     color: "#53BEFE",
-    fontFamily: 'OpenSans-Light',
+    // fontFamily: 'OpenSans-Light',
     fontSize: 16,
     fontWeight: "600",
     lineHeight: 22,

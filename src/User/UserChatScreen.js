@@ -1,16 +1,22 @@
-import { View, Text, StyleSheet, Image, TextInput, ScrollView, Modal, Button, } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  TextInput,
+  ScrollView,
+  Modal,
+  Button,
+} from "react-native";
 import React, { useState } from "react";
 // import { ScrollView } from "react-native-gesture-handler";
 import Icon from "@expo/vector-icons/Ionicons";
-import {Ionicons, Entypo} from "@expo/vector-icons";
+import { Ionicons, Entypo } from "@expo/vector-icons";
+import UserChat from './UserChatAttachmentScreen';
+import UserChatAttachmentScreen from "./UserChatAttachmentScreen";
 const UserChatScreen = ({ navigation }) => {
-    const [isModalVisible, setModalVisible] = useState(false)
 
-const toggleModal = () => {
-    setModalVisible(!isModalVisible);
-}
-
-   return (
+  return (
     <ScrollView>
   {/* Header */}
   <View style={styles.header}>
@@ -71,7 +77,7 @@ const toggleModal = () => {
 
       <Image
         source={{
-          uri: "https://m.media-amazon.com/images/I/811DmKeDYJL._AC_SY450_.jpg",
+          uri: "https://s3-alpha-sig.figma.com/img/dfc0/9993/40b953d60acb7f226118bea178e6baa7?Expires=1688342400&Signature=LpnRqmomSU-Kc~leoEMWUWcEGviVf7h9wv1fAw8fB7-HHqJSCvNCNlgxBp699LEgMhaNLnHhD9gFcKv-rESBF1TRJ8txNkDGoVtZ8ni0gRWPvk03ixpoqeoktHnyw~9gH7Ig1Aeo2hlEN127yr9SJjfPc9A5PknotgIIiRMmUWiYi37YAgK2EXsU4UQi6z~VGLMDLchYE21j5IoFVhMiG280p28VI6~MFvpA4X578oxwcQv5ZPz~kcsdnc4Yjltmit8~~GH-V5KwCSm4FWUsxhV8rRpYDUNXWOPVATaVB3ij1A4PUrpkp8G3W95E40RRJOPmkNYTsWt-0e7aPqg4Rw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         }}
         style={styles.square}
       />
@@ -117,13 +123,13 @@ const toggleModal = () => {
         />
       </View>
 
-      <View style={styles.container1}>
+      {/* <View style={styles.container1}>
       <TextInput
         style={styles.inputText}
         placeholder="Message"
         placeholderTextColor="#9093A6"
       />
-      <Entypo name="attachment" size={25} color="#8A8A8A" style={styles.inputIcons} onPress={toggleModal} />
+      <Entypo name="attachment" size={25} color="#8A8A8A" style={styles.inputIcons} />
         <Ionicons name="camera-outline" size={30} color="#8A8A8A" style={styles.inputIcons} />
       <View style={styles.iconsContainer}>
         
@@ -131,28 +137,9 @@ const toggleModal = () => {
           <Ionicons name="mic-outline" size={32} color="#FFFFFF" />
         </View>
       </View>
-    </View>
+    </View> */}
 
-    <Modal
-        visible={isModalVisible}
-        animationType="slide"
-        transparent={true}
-        onRequestClose={toggleModal}
-      >
-        <View style={styles.modalContainer}>
-          <View style={styles.modalContent}>
-            <Text style={styles.modalText}>Select an option:</Text>
-            <View style={styles.iconContainer}>
-              <Icon name="ios-musical-notes" size={50} color="blue" />
-              <Icon name="ios-document" size={50} color="green" />
-              <Icon name="ios-videocam" size={50} color="red" />
-              <Icon name="ios-image" size={50} color="purple" />
-            </View>
-            <Button title="Close Modal" onPress={toggleModal} />
-          </View>
-        </View>
-      </Modal>
-
+<UserChatAttachmentScreen />
 
     </ScrollView>
   );
@@ -317,80 +304,54 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     left: 280,
-    borderRadius: 15,
     // opacity: 0.7,
     // resizeMode: "stretch"
     
     // top: 0,
   },
-  container1: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginHorizontal: 20,
-    marginTop: 20,
-    width: 550,
-  },
-  inputText: {
-    flex: 1,
-    height: 60,
-    width: 350,
-    left: 10,
-    top: 0,
-    fontWeight: "400",
-    fontSize: 16,
-    lineHeight: 22,
-    borderRadius: 20,
-    backgroundColor: "#ffff",
-    paddingHorizontal: 16,
-    color: "#8A8A8A",
+  // container1: {
+  //   flexDirection: "row",
+  //   alignItems: "center",
+  //   justifyContent: "space-between",
+  //   marginHorizontal: 20,
+  //   marginTop: 20,
+  //   width: 550,
+  // },
+  // inputText: {
+  //   flex: 1,
+  //   height: 60,
+  //   width: 350,
+  //   left: 10,
+  //   top: 0,
+  //   fontWeight: "400",
+  //   fontSize: 16,
+  //   lineHeight: 22,
+  //   borderRadius: 20,
+  //   backgroundColor: "#ffff",
+  //   paddingHorizontal: 16,
+  //   color: "#8A8A8A",
    
     
-  },
-  iconsContainer: {
-    flexDirection: "row",
-    marginLeft: 10,
-  },
-  inputIcons: {
-    right: 80,
-    margin: 5,
-  },
-  circle: {
-    width: 60,
-    height: 60,
-    right: 70,
-    borderRadius: 50,
-    backgroundColor: "#8171F7",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  modalContainer: {
-    // flex: 1,
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    left: 0,
-    top: 675
-    // backgroundColor: 'red',
-    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  modalContent: {
-    backgroundColor: '#fff',
-    padding: 16,
-    borderRadius: 8,
-    width: '100%',
-    height: 300,
-    alignItems: 'center',
-  },
-  modalText: {
-    fontSize: 16,
-    marginBottom: 10,
-  },
-  iconContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '100%',
-    marginVertical: 20,
-  },
+  // },
+  // iconsContainer: {
+  //   flexDirection: "row",
+  //   marginLeft: 10,
+  // },
+  // inputIcons: {
+  //   right: 80,
+  //   margin: 5,
+  // },
+  // circle: {
+  //   width: 60,
+  //   height: 60,
+  //   right: 70,
+  //   borderRadius: 50,
+  //   backgroundColor: "#8171F7",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  // },
 });
 
-export default UserChatScreen
+
+
+export default UserChatScreen;

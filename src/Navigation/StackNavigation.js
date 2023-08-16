@@ -14,7 +14,7 @@ import ChatList from '../TabNavigation component/ChatList'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import AddGroup from '../Admin/AddGroup'
 import AdminChat from '../Admin/AdminChat'
-import MyTabs from './TabNavigation'
+import TabNavigation from './TabNavigation'
 import AdminGroupsChats from '../Admin/AdminGroupsChats'
 import AdminMoreOption from '../Admin/AdminMoreOption'
 import AdminMoreWallpapaer from '../Admin/AdminMoreWallpapaer'
@@ -59,7 +59,15 @@ const MyStack = () => {
        <Stack.Screen name='PhoneSignIn' component={PhoneSignIn} />
       <Stack.Screen name='OtpScreen' component={OtpScreen} />
       <Stack.Screen name='SignUp' component={SignUp} />
-      <Stack.Screen name='Dashboard' component={DashboardScreen} />
+      <Stack.Screen name='Dashboard'>
+        {() => (
+          <>
+         
+         <DashboardScreen />
+         {/* <TabNavigation/> */}
+         </>
+               )}
+      </Stack.Screen>
       <Stack.Screen name='PaymentDetail' component={DashboardPaymentDetailed} />
       <Stack.Screen name='Client' component={ClientScreen} />
       <Stack.Screen name='ClientDetail' component={DetailScreen} />
@@ -123,8 +131,16 @@ const MyStack = () => {
   
   {/* user Screen */}
  
- <Stack.Screen name='Accept Invite' component={UserAcceptInviteScreen} options={{headerShown: false}} />
-  <Stack.Screen name='User SignIn' component={UserSignInScreen} options={{headerShown: false}} />
+ <Stack.Screen name='Accept Invite'  options={{headerShown: false}}>
+ {() => (
+          <>
+            
+            <UserAcceptInviteScreen />
+          </>
+        )}
+ </Stack.Screen>
+  {/* <Stack.Screen name='User SignIn' component={UserSignInScreen} options={{headerShown: false}} /> */}
+  <Stack.Screen name='User Sign-In' component={UserSignInScreen} options={{headerShown: false}} />
  <Stack.Screen name='Email SignIn' component={UserEmailSignInScreen} options={{headerShown: false}} />
  <Stack.Screen name='Otp Screen' component={UserOTPScreen} options={{headerShown: false}} />
  <Stack.Screen name='User Dashboard' component={UserDashboardScreen} options={{headerShown: false}} />
@@ -133,7 +149,7 @@ const MyStack = () => {
  <Stack.Screen name='User Profile' component={UserProfileScreen} options={{headerShown: false}} />
 <Stack.Screen name='User Notification' component={UserNotificationScreen} options={{headerShown: false}} />
 <Stack.Screen name='User Chat listing' component={UserChatlisting} options={{headerShown: false}} />
-<Stack.Screen name='User Chat Screen' component={UserChatScreen} options={{headerShown: false}} />
+<Stack.Screen name='User Chat Screen' component={UserChatScreen} options={{headerShown: false}}  />
 
   </Stack.Navigator>
   )
